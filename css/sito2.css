@@ -1,0 +1,190 @@
+body{
+    align-items: center;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+
+    font-family: monospace;
+    /*dichirazione variabili*/
+    --altezza: 50px;
+    --larghezza: 150px;
+    --color1: #2105F0;
+    --color2:blue;
+    --color3: black;
+    --color4:#008BFF;
+    --sfondo: #7FE6F0;
+    /* fine dichiarazioni*/
+
+    background-color: var(--sfondo);
+
+}
+
+.light{
+    --color1: #2105F0;
+    --color2:blue;
+    --color3: black;
+    --color4:#008BFF;
+    --sfondo: #7FE6F0;
+}
+
+.dark{
+    --color1: #2105F0;
+    --color2:blue;
+    --color3:white;
+    --color4:#008BFF;
+    --sfondo: black;
+
+}
+
+
+
+nav{
+    display: flex;
+}
+
+#sito1{
+    padding: 30px;
+    background-color: var(--color1);
+    margin: 20px;
+    height: var(--altezza);
+    width: var(--larghezza);
+}
+
+#sito2{
+    padding: 30px;
+    background-color: var(--color1);
+    margin: 20px;
+    height: calc(var(--altezza)/1.4);
+    width: calc(var(--larghezza)/1.4);
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+}
+
+ #sito1:hover{
+    height: calc(var(--altezza)/0.8);
+    width: calc(var(--larghezza)/0.8);
+    font-size: 18pt;
+    border: 4px solid navy;
+}
+
+#sito2:hover{
+    height: calc(var(--altezza)/0.6);
+    width: calc(var(--larghezza)/0.6);
+    font-size: 16pt;
+    border: 4px solid navy;
+}
+
+#titolo{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20pt;
+    color:var(--color3);
+}
+
+.tab{
+    display: grid;
+    border: 2px solid var(--color3);
+    grid-template-columns: repeat(2,auto);
+    margin:100px;
+}
+
+.tab>div{
+    border: 2px solid var(--color3);
+    display: flex;
+    font-size: 15pt;
+    align-items: center;
+    padding:10px;
+    color:var(--color3);
+}
+
+
+.tab>div:nth-child(even){
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border-left: none;
+    
+}
+
+.tab>.titolo{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18pt;
+    background-color: var(--color4);
+    border-right: none;
+}
+
+.tab>.voto{
+    background-color: var(--color4);
+}
+
+
+#punteggio{
+    border: 2px solid var(--color3);
+    border-radius: 50%;
+    font-size:18pt;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin:2px;
+}
+
+/* voti*/
+
+.cont0>div:nth-child(1){
+    background-color: red;
+}
+
+.cont1>div:nth-child(2){
+    background-color: #F0D93C;
+}
+
+.cont2>div:nth-child(3){
+    background-color: green;
+}
+
+/* fine voti*/
+
+.link{
+    font-size: 16pt;
+    margin-bottom: 30px;
+    color: var(--color3);
+}
+
+#links{
+    margin-bottom: 30px;
+    color: #F5523F;
+    font-size: 16pt;
+}
+
+#somma{
+    font-size: 20pt;
+    border: 5px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: green;
+}
+
+
+
+
+footer{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16pt;
+    background-color: var(--color2);
+    color: var(--color3);
+}
